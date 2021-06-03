@@ -17,7 +17,7 @@ function setup() {
 
 	ground = new Ground(400,680,800,15)
 
-	dustbin = new Dustbin(525,625,100, 100)
+	dustbin = new Dustbin(475,585,100, 100)
     
     d1 = new DustbinSupport(480,625,10,100)
 	d2 = new DustbinSupport(570,625,10,100)
@@ -31,14 +31,12 @@ function setup() {
 
 function draw() {
   rectMode(CENTER); 
-  background(0); 
+  background(205); 
   
-  paper.display();   
   ground.display();
   dustbin.display();
-  d1.display();
-  d2.display();
-  d3.display();
+  paper.display();   
+
 
   Body.setDensity(dustbin, 0)
 
